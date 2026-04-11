@@ -1,54 +1,84 @@
 const missions = [
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.",
-  "Aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt dui ut ornare lectus sit amet est placerat in egestas erat imperdiet.",
+  "Menyediakan layanan konsultasi dan implementasi yang membantu perusahaan menata proses kerja, mempercepat koordinasi tim, dan menjaga kualitas layanan secara konsisten di setiap tahap operasional.",
+  "Mengembangkan solusi digital yang mudah dipakai, relevan dengan kebutuhan bisnis, serta dapat diukur dampaknya terhadap efisiensi, transparansi data, dan kecepatan pengambilan keputusan.",
+  "Membangun kemitraan jangka panjang melalui komunikasi yang terbuka, pendampingan yang responsif, dan perencanaan kerja yang realistis agar perubahan dapat dijalankan secara bertahap dan berkelanjutan.",
 ];
 
 const values = [
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed.",
-  "Mauris augue neque gravida in fermentum et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl vel.",
-  "Et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed.",
-  "Dui ut ornare lectus sit amet est placerat in egestas erat imperdiet sed euismod nisi porta lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus.",
+  {
+    title: "Integritas dalam Eksekusi",
+    copy: "Kami menempatkan kejelasan komitmen, konsistensi kualitas kerja, dan tanggung jawab terhadap hasil sebagai dasar dalam setiap proyek. Bagi Ryedummy, kepercayaan klien dibangun dari kemampuan untuk menepati janji, menyampaikan progres secara jujur, dan menyelesaikan pekerjaan dengan standar yang dapat dipertanggungjawabkan.",
+  },
+  {
+    title: "Kolaborasi yang Sehat",
+    copy: "Kami percaya solusi terbaik lahir dari proses kerja yang terbuka dan saling mendengar. Karena itu, setiap tim didorong untuk aktif berdiskusi, memahami kebutuhan lintas fungsi, dan menyelaraskan keputusan agar pekerjaan tidak berjalan sendiri-sendiri, melainkan saling menguatkan.",
+  },
+  {
+    title: "Fokus pada Dampak",
+    copy: "Setiap inisiatif yang kami jalankan harus memiliki manfaat yang nyata, baik dalam bentuk efisiensi waktu, perbaikan alur kerja, peningkatan layanan, maupun kualitas data yang lebih baik. Kami tidak mengejar perubahan yang rumit bila hasil yang dibutuhkan dapat dicapai dengan pendekatan yang lebih sederhana dan efektif.",
+  },
+  {
+    title: "Tumbuh Secara Adaptif",
+    copy: "Ryedummy memandang perubahan sebagai bagian dari pertumbuhan. Kami membangun budaya belajar yang mendorong tim untuk cepat beradaptasi, tetap rapi dalam bekerja, dan siap menyesuaikan strategi ketika kebutuhan bisnis bergerak lebih cepat daripada rencana awal.",
+  },
 ];
 
 const historyMoments = [
   {
     year: "2016",
-    title: "Lorem ipsum dolor",
-    copy: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title: "Berdiri sebagai mitra penataan proses kerja",
+    copy: "Ryedummy memulai perjalanan sebagai perusahaan pendamping operasional yang membantu usaha menengah merapikan alur administrasi, layanan pelanggan, dan koordinasi tim inti.",
   },
   {
     year: "2019",
-    title: "Consectetur adipiscing",
-    copy: "Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.",
+    title: "Memperluas layanan ke integrasi sistem pendukung",
+    copy: "Setelah memahami kebutuhan klien yang semakin kompleks, Ryedummy menambahkan layanan pengembangan dashboard, dokumentasi proses, dan integrasi sistem kerja yang lebih terukur.",
   },
   {
     year: "2024",
-    title: "Eiusmod tempor incididunt",
-    copy: "Cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt.",
+    title: "Menguatkan posisi sebagai partner transformasi bertahap",
+    copy: "Ryedummy fokus pada pendekatan implementasi yang realistis, yaitu menggabungkan strategi, perbaikan operasional, dan solusi digital secara bertahap agar perubahan lebih mudah diterapkan.",
   },
 ];
 
 const stats = [
-  { value: "12+", label: "Lorem ipsum dolor sit amet" },
-  { value: "24/7", label: "Sed do eiusmod tempor" },
-  { value: "48", label: "Ut labore et dolore magna" },
+  { value: "8 Tahun", label: "Pengalaman tim inti dalam pendampingan operasional" },
+  { value: "35+ Proyek", label: "Inisiatif transformasi yang ditangani lintas sektor" },
+  { value: "24/7", label: "Komitmen respons awal untuk kebutuhan prioritas" },
 ];
 
 const clients = [
-  { name: "Lorem Alpha", logo: "/clients/lorem-alpha.svg" },
-  { name: "Ipsum Beta", logo: "/clients/ipsum-beta.svg" },
-  { name: "Dolor Gamma", logo: "/clients/dolor-gamma.svg" },
-  { name: "Sit Amet", logo: "/clients/sit-amet.svg" },
+  {
+    name: "PT Nusa Aruna",
+    logo: "/clients/lorem-alpha.svg",
+    description: "Perusahaan distribusi regional yang membutuhkan standardisasi alur kerja dan pelaporan cabang.",
+  },
+  {
+    name: "PT Tirta Logika",
+    logo: "/clients/ipsum-beta.svg",
+    description: "Mitra dummy untuk proyek penataan dashboard operasional dan pemetaan proses layanan internal.",
+  },
+  {
+    name: "CV Sentra Prima",
+    logo: "/clients/dolor-gamma.svg",
+    description: "Usaha berkembang yang memerlukan pendampingan prosedur kerja, dokumentasi, dan penguatan koordinasi tim.",
+  },
+  {
+    name: "PT Rimba Karya",
+    logo: "/clients/sit-amet.svg",
+    description: "Perusahaan dengan kebutuhan integrasi informasi proyek, monitoring progres, dan perbaikan komunikasi lintas unit.",
+  },
 ];
 
 const clientTrack = [...clients, ...clients, ...clients];
 
 const infoItems = [
-  { label: "Nama Perusahaan", value: "Ryedummy" },
-  { label: "Alamat", value: "Jl. Lorem Ipsum No. 123, Dolor District, Jakarta 12345" },
-  { label: "No. Telepon", value: "(021) 0000 0000" },
-  { label: "Email", value: "hello@ryedummy.example" },
+  { label: "Nama Perusahaan", value: "PT Ryedummy Solusi Nusantara" },
+  { label: "Bidang Usaha", value: "Konsultasi operasional dan solusi digital bisnis" },
+  { label: "Alamat", value: "Jl. Danau Cerah No. 18, Kebayoran Baru, Jakarta Selatan 12160" },
+  { label: "No. Telepon", value: "(021) 5098 7788" },
+  { label: "Email", value: "halo@ryedummy.co.id" },
+  { label: "Website", value: "www.ryedummy.co.id" },
 ];
 
 function SectionHeading({ eyebrow, title, description }) {
@@ -66,6 +96,15 @@ function InfoCard({ label, value }) {
     <div className="info-card">
       <span>{label}</span>
       <strong>{value}</strong>
+    </div>
+  );
+}
+
+function TreeNode({ title, subtitle, root = false }) {
+  return (
+    <div className={`tree-node${root ? " tree-node-root" : ""}`}>
+      <strong>{title}</strong>
+      <small>{subtitle}</small>
     </div>
   );
 }
@@ -99,16 +138,17 @@ export default function Home() {
             <p className="eyebrow">Company Profile</p>
             <h1>Ryedummy</h1>
             <p className="lead">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo consequat.
+              Ryedummy adalah perusahaan dummy yang bergerak di bidang konsultasi
+              operasional, pengembangan sistem pendukung kerja, dan pendampingan
+              transformasi proses bisnis. Kami membantu organisasi menata alur kerja,
+              memperjelas koordinasi tim, dan menghadirkan layanan yang lebih
+              konsisten kepada pelanggan.
             </p>
 
             <div className="hero-badges">
-              <span>Lorem ipsum</span>
-              <span>Dolor sit amet</span>
-              <span>Consectetur elit</span>
+              <span>Strategi Operasional</span>
+              <span>Pengembangan Sistem</span>
+              <span>Pendampingan Tim</span>
             </div>
 
             <div className="hero-actions">
@@ -124,25 +164,35 @@ export default function Home() {
           <div className="hero-visual appear delay-2">
             <div className="visual-orb orb-one" />
             <div className="visual-orb orb-two" />
+            <div className="hero-visual-stack">
+              <article className="floating-card primary-card">
+                <p className="mini-eyebrow">Overview</p>
+                <h2>Mitra pertumbuhan bisnis yang tertata</h2>
+                <p>
+                  Ryedummy menggabungkan pemetaan proses, desain solusi, dan eksekusi
+                  bertahap supaya perubahan dapat diterapkan tanpa mengganggu operasi
+                  harian perusahaan.
+                </p>
+              </article>
 
-            <article className="floating-card primary-card">
-              <p className="mini-eyebrow">Overview</p>
-              <h2>Lorem ipsum dolor sit amet</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </article>
+              <div className="hero-mini-grid">
+                <article className="floating-card secondary-card">
+                  <span>Fokus</span>
+                  <p>
+                    Perbaikan proses kerja, layanan internal, dan standar
+                    operasional.
+                  </p>
+                </article>
 
-            <article className="floating-card secondary-card">
-              <span>01</span>
-              <p>Lorem ipsum dolor sit amet consectetur.</p>
-            </article>
-
-            <article className="floating-card tertiary-card">
-              <span>02</span>
-              <p>Ut enim ad minim veniam quis nostrud exercitation.</p>
-            </article>
+                <article className="floating-card tertiary-card">
+                  <span>Metode</span>
+                  <p>
+                    Implementasi bertahap yang realistis, terukur, dan mudah
+                    diadopsi.
+                  </p>
+                </article>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -163,15 +213,16 @@ export default function Home() {
               <SectionHeading
                 eyebrow="Sejarah"
                 title="Perjalanan Ryedummy"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                description="Ryedummy berkembang dari mitra penataan proses kerja menjadi partner transformasi yang membantu bisnis bergerak lebih rapi, efisien, dan siap bertumbuh."
               />
 
               <div className="history-note">
                 <p className="mini-eyebrow">Highlights</p>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt
-                  ornare massa eget egestas purus viverra accumsan in nisl nisi.
+                  Perjalanan perusahaan dibangun dari kebutuhan nyata klien: mulai dari
+                  pembenahan alur operasional dasar, penyusunan dokumentasi, sampai
+                  integrasi sistem pendukung yang membuat keputusan bisnis lebih cepat
+                  dan berbasis data.
                 </p>
               </div>
             </div>
@@ -195,13 +246,13 @@ export default function Home() {
             <SectionHeading
               eyebrow="Visi"
               title="Visi Perusahaan"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam vulputate dignissim suspendisse in est ante in nibh mauris cursus mattis."
+              description="Menjadi mitra pertumbuhan bisnis yang menghadirkan solusi operasional dan digital yang rapi, adaptif, dan mudah diterapkan oleh perusahaan di Indonesia."
             />
 
             <div className="vision-pills">
-              <span>Clarity</span>
-              <span>Growth</span>
-              <span>Impact</span>
+              <span>Terukur</span>
+              <span>Adaptif</span>
+              <span>Kolaboratif</span>
             </div>
           </article>
 
@@ -209,7 +260,7 @@ export default function Home() {
             <SectionHeading
               eyebrow="Misi"
               title="Misi Perusahaan"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              description="Kami membangun pendekatan kerja yang tidak hanya strategis di atas kertas, tetapi juga realistis ketika dijalankan oleh tim di lapangan."
             />
 
             <ul className="mission-list">
@@ -225,14 +276,15 @@ export default function Home() {
         <SectionHeading
           eyebrow="Nilai Perusahaan"
           title="Prinsip Kerja Ryedummy"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          description="Nilai-nilai ini menjadi dasar dalam menyusun strategi, menjalankan proyek, dan membangun hubungan kerja jangka panjang dengan setiap klien."
         />
 
         <div className="values-mosaic">
           {values.map((value, index) => (
-            <article className={`value-card tone-${index + 1}`} key={value}>
+            <article className={`value-card tone-${index + 1}`} key={value.title}>
               <span className="value-number">0{index + 1}</span>
-              <p>{value}</p>
+              <h3>{value.title}</h3>
+              <p>{value.copy}</p>
             </article>
           ))}
         </div>
@@ -244,54 +296,67 @@ export default function Home() {
             <SectionHeading
               eyebrow="Struktur Organisasi"
               title="Bagan Organisasi"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              description="Struktur organisasi Ryedummy disusun agar pengambilan keputusan tetap cepat, namun koordinasi antar unit tetap jelas dan terkontrol."
             />
 
             <div className="tree-wrapper">
               <ul className="org-tree">
                 <li>
-                  <div className="tree-node">Ryedummy</div>
+                  <TreeNode
+                    root
+                    title="PT Ryedummy Solusi Nusantara"
+                    subtitle="Arah korporat dan standar layanan"
+                  />
                   <ul>
                     <li>
-                      <div className="tree-node">Direktur Utama Lorem</div>
+                      <TreeNode
+                        title="Dewan Komisaris"
+                        subtitle="Pengawasan strategi dan tata kelola"
+                      />
+                    </li>
+                    <li>
+                      <TreeNode
+                        title="Direktur Utama"
+                        subtitle="Kepemimpinan bisnis dan eksekusi"
+                      />
                       <ul>
                         <li>
-                          <div className="tree-node">Divisi Operasional Ipsum</div>
+                          <TreeNode
+                            title="Manajer Operasional"
+                            subtitle="Kualitas layanan dan pengiriman proyek"
+                          />
                         </li>
                         <li>
-                          <div className="tree-node">Divisi Keuangan Dolor</div>
+                          <TreeNode
+                            title="Manajer Keuangan & Legal"
+                            subtitle="Kontrol anggaran dan kepatuhan"
+                          />
                         </li>
                         <li>
-                          <div className="tree-node">Divisi Pengembangan Sit</div>
+                          <TreeNode
+                            title="Manajer Produk & Teknologi"
+                            subtitle="Solusi digital dan integrasi sistem"
+                          />
+                        </li>
+                        <li>
+                          <TreeNode
+                            title="Manajer Sales & Partnership"
+                            subtitle="Relasi klien dan pengembangan pasar"
+                          />
                         </li>
                       </ul>
                     </li>
                     <li>
-                      <div className="tree-node">Komisaris Amet</div>
-                    </li>
-                    <li>
-                      <div className="tree-node">Sekretariat Elit</div>
+                      <TreeNode
+                        title="Sekretaris Perusahaan"
+                        subtitle="Administrasi korporat dan dokumentasi"
+                      />
                     </li>
                   </ul>
                 </li>
               </ul>
             </div>
           </div>
-
-          <aside className="org-sidecard">
-            <p className="mini-eyebrow">Core Structure</p>
-            <h3>Lorem ipsum dolor sit amet</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Arcu vitae elementum
-              curabitur vitae nunc sed velit dignissim sodales.
-            </p>
-            <ul className="org-points">
-              <li>Lorem ipsum dolor sit amet consectetur adipiscing elit.</li>
-              <li>Sed do eiusmod tempor incididunt ut labore et dolore magna.</li>
-              <li>Ut enim ad minim veniam quis nostrud exercitation ullamco.</li>
-            </ul>
-          </aside>
         </div>
       </section>
 
@@ -301,7 +366,7 @@ export default function Home() {
             <SectionHeading
               eyebrow="Informasi Perusahaan"
               title="Detail Kontak"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              description="Informasi berikut disiapkan sebagai data dummy company profile yang tetap terlihat profesional dan realistis ketika ditampilkan di halaman publik."
             />
 
             <div className="info-grid">
@@ -320,11 +385,12 @@ export default function Home() {
               <span className="map-point point-two" />
             </div>
             <p className="mini-eyebrow">Office Snapshot</p>
-            <h3>Lorem ipsum office overview</h3>
+            <h3>Kantor pusat yang mendukung kolaborasi tim</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Eu facilisis sed
-              odio morbi quis commodo odio aenean sed.
+              Kantor pusat Ryedummy dirancang sebagai ruang koordinasi untuk tim
+              proyek, pertemuan klien, dan evaluasi rutin lintas divisi. Pendekatan
+              kerja hybrid tetap dijaga, namun pusat keputusan dan pengendalian mutu
+              berada di satu jalur komunikasi yang jelas.
             </p>
           </article>
         </div>
@@ -335,9 +401,9 @@ export default function Home() {
           <SectionHeading
             eyebrow="Clients"
             title="Dummy Client Showcase"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            description="Daftar berikut menggunakan identitas klien dummy untuk memberi gambaran bagaimana portofolio perusahaan dapat ditampilkan secara ringkas dan rapi."
           />
-
+          <p className="carousel-note">Geser otomatis. Arahkan kursor untuk menghentikan pergerakan.</p>
         </div>
 
         <div className="client-marquee">
@@ -346,7 +412,7 @@ export default function Home() {
               <article className="client-card" key={`${client.name}-${index}`}>
                 <img src={client.logo} alt={`Logo ${client.name}`} />
                 <h3>{client.name}</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do.</p>
+                <p>{client.description}</p>
               </article>
             ))}
           </div>
@@ -354,8 +420,11 @@ export default function Home() {
       </section>
 
       <footer className="page-footer">
-        <p>Ryedummy</p>
-        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+        <p>PT Ryedummy Solusi Nusantara</p>
+        <span>
+          Perusahaan dummy untuk company profile dengan tampilan cerah, rapi, dan
+          responsif di desktop maupun mobile.
+        </span>
       </footer>
     </main>
   );
