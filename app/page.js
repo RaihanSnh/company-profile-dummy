@@ -130,6 +130,25 @@ export default function Home() {
           <a href="#informasi">Informasi</a>
           <a href="#clients">Clients</a>
         </nav>
+
+        <details className="mobile-nav">
+          <summary aria-label="Buka navigasi">
+            <span className="mobile-nav-label">Menu</span>
+            <span className="hamburger" aria-hidden="true">
+              <span />
+              <span />
+              <span />
+            </span>
+          </summary>
+          <nav className="mobile-nav-panel" aria-label="Navigasi mobile">
+            <a href="#sejarah">Sejarah</a>
+            <a href="#visi-misi">Visi & Misi</a>
+            <a href="#nilai">Nilai</a>
+            <a href="#struktur">Struktur</a>
+            <a href="#informasi">Informasi</a>
+            <a href="#clients">Clients</a>
+          </nav>
+        </details>
       </header>
 
       <section className="hero" id="home">
@@ -355,6 +374,55 @@ export default function Home() {
                   </ul>
                 </li>
               </ul>
+
+              <div className="org-mobile-chart">
+                <div className="org-mobile-level single">
+                  <TreeNode
+                    root
+                    title="PT Ryedummy Solusi Nusantara"
+                    subtitle="Arah korporat dan standar layanan"
+                  />
+                </div>
+
+                <div className="org-mobile-line" aria-hidden="true" />
+
+                <div className="org-mobile-level top-level">
+                  <TreeNode
+                    title="Dewan Komisaris"
+                    subtitle="Pengawasan strategi dan tata kelola"
+                  />
+                  <TreeNode
+                    title="Direktur Utama"
+                    subtitle="Kepemimpinan bisnis dan eksekusi"
+                  />
+                  <TreeNode
+                    title="Sekretaris Perusahaan"
+                    subtitle="Administrasi korporat dan dokumentasi"
+                  />
+                </div>
+
+                <div className="org-mobile-subsection">
+                  <p className="mini-eyebrow">Unit di Bawah Direktur Utama</p>
+                  <div className="org-mobile-level grid-two">
+                    <TreeNode
+                      title="Manajer Operasional"
+                      subtitle="Kualitas layanan dan pengiriman proyek"
+                    />
+                    <TreeNode
+                      title="Manajer Keuangan & Legal"
+                      subtitle="Kontrol anggaran dan kepatuhan"
+                    />
+                    <TreeNode
+                      title="Manajer Produk & Teknologi"
+                      subtitle="Solusi digital dan integrasi sistem"
+                    />
+                    <TreeNode
+                      title="Manajer Sales & Partnership"
+                      subtitle="Relasi klien dan pengembangan pasar"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -403,7 +471,6 @@ export default function Home() {
             title="Dummy Client Showcase"
             description="Daftar berikut menggunakan identitas klien dummy untuk memberi gambaran bagaimana portofolio perusahaan dapat ditampilkan secara ringkas dan rapi."
           />
-          <p className="carousel-note">Geser otomatis. Arahkan kursor untuk menghentikan pergerakan.</p>
         </div>
 
         <div className="client-marquee">

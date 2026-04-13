@@ -165,6 +165,93 @@ img {
   transform: translateY(-1px);
 }
 
+.mobile-nav {
+  display: none;
+}
+
+.mobile-nav summary {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  list-style: none;
+  cursor: pointer;
+  user-select: none;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+
+.mobile-nav summary::-webkit-details-marker {
+  display: none;
+}
+
+.mobile-nav-label {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hamburger {
+  display: inline-grid;
+  gap: 0.26rem;
+  padding: 0.75rem 0.82rem;
+  border-radius: 999px;
+  border: 1px solid rgba(96, 138, 123, 0.12);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 10px 22px rgba(111, 152, 138, 0.08);
+}
+
+.hamburger span {
+  display: block;
+  width: 1.15rem;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--ink);
+  transition:
+    transform 180ms ease,
+    opacity 180ms ease;
+}
+
+.mobile-nav[open] .hamburger span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.mobile-nav[open] .hamburger span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-nav[open] .hamburger span:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+.mobile-nav-panel {
+  position: absolute;
+  top: calc(100% + 0.9rem);
+  right: 0;
+  display: grid;
+  min-width: min(18rem, calc(100vw - 2rem));
+  gap: 0.45rem;
+  padding: 0.9rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(96, 138, 123, 0.12);
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 18px 34px rgba(95, 142, 118, 0.14);
+}
+
+.mobile-nav-panel a {
+  padding: 0.82rem 0.9rem;
+  border-radius: 1rem;
+  color: var(--muted);
+  transition:
+    background-color 180ms ease,
+    color 180ms ease;
+}
+
+.mobile-nav-panel a:hover,
+.mobile-nav-panel a:focus-visible {
+  color: var(--ink);
+  background: rgba(121, 210, 140, 0.14);
+}
+
 .hero {
   padding: 3.3rem 0 2.4rem;
 }
@@ -195,7 +282,6 @@ img {
 .hero-visual h2,
 .value-card h3,
 .timeline-card h3,
-.org-sidecard h3,
 .office-card h3,
 .client-card h3 {
   margin: 0;
@@ -215,8 +301,6 @@ img {
 .timeline-card p,
 .mission-list li,
 .value-card p,
-.org-sidecard p,
-.org-points li,
 .info-card strong,
 .office-card p,
 .client-card p,
@@ -406,7 +490,6 @@ img {
 .value-card,
 .info-card,
 .client-card,
-.org-sidecard,
 .office-card {
   transition:
     transform 180ms ease,
@@ -462,7 +545,6 @@ img {
 .vision-card,
 .mission-card,
 .org-panel,
-.org-sidecard,
 .company-card,
 .office-card,
 .page-footer {
@@ -813,10 +895,39 @@ img {
   line-height: 1.55;
 }
 
-.org-sidecard {
-  padding: 1.55rem;
-  align-self: start;
-  background: linear-gradient(155deg, rgba(255, 255, 255, 0.86), rgba(255, 240, 178, 0.56));
+.org-mobile-chart {
+  display: none;
+}
+
+.org-mobile-level {
+  display: grid;
+  gap: 1rem;
+}
+
+.org-mobile-level.single {
+  justify-items: center;
+}
+
+.org-mobile-level.top-level,
+.org-mobile-level.grid-two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.org-mobile-level.top-level .tree-node:nth-child(2) {
+  grid-column: 1 / -1;
+}
+
+.org-mobile-line {
+  width: 2px;
+  height: 1.6rem;
+  margin: 0.9rem auto;
+  background: linear-gradient(180deg, rgba(79, 152, 101, 0.6), rgba(207, 238, 245, 0.8));
+}
+
+.org-mobile-subsection {
+  margin-top: 1.4rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(96, 138, 123, 0.12);
 }
 
 .office-card h3 {
@@ -827,13 +938,6 @@ img {
 
 .office-card p:last-child {
   margin-top: 0.9rem;
-}
-
-.org-points {
-  display: grid;
-  gap: 0.8rem;
-  margin: 1.15rem 0 0;
-  padding-left: 1.15rem;
 }
 
 .company-card {
@@ -1154,36 +1258,21 @@ img {
 }
 
 @media (max-width: 860px) {
-  .org-tree,
-  .org-tree ul {
-    display: block;
-    min-width: 0;
-  }
-
   .org-tree {
-    text-align: left;
-  }
-
-  .org-tree ul {
-    margin-left: 0.4rem;
-    padding-left: 1rem;
-    border-left: 1px dashed rgba(79, 152, 101, 0.35);
-  }
-
-  .org-tree li {
-    min-width: 0;
-    padding: 1rem 0 0 1rem;
-  }
-
-  .org-tree li::before,
-  .org-tree li::after,
-  .org-tree ul::before {
     display: none;
+  }
+
+  .org-mobile-chart {
+    display: block;
   }
 
   .tree-node,
   .tree-node-root {
     min-width: 0;
+  }
+
+  .tree-node-root {
+    width: min(100%, 24rem);
   }
 }
 
@@ -1200,7 +1289,12 @@ img {
   }
 
   .main-nav {
-    justify-content: flex-start;
+    display: none;
+  }
+
+  .mobile-nav {
+    position: relative;
+    display: block;
   }
 
   .hero {
@@ -1229,6 +1323,15 @@ img {
   .values-mosaic,
   .info-grid {
     grid-template-columns: 1fr;
+  }
+
+  .org-mobile-level.top-level,
+  .org-mobile-level.grid-two {
+    grid-template-columns: 1fr;
+  }
+
+  .org-mobile-level.top-level .tree-node:nth-child(2) {
+    grid-column: auto;
   }
 
   .timeline-card {
